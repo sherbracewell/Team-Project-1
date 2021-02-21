@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 5946678004500259811}
   - component: {fileID: 5946678004500259808}
   - component: {fileID: 596323584}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Rocketboy_0
-  m_TagString: Untagged
+  m_TagString: RocketBoy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.009023175, y: -0.04263714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,7 +150,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6130967, y: 0.938775}
   m_EdgeRadius: 0
 --- !u!82 &5946678004500259808
 AudioSource:
@@ -261,7 +261,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  maxLives: 3
+  livesText: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: c3406d874db433a4cb44fdca8eb74670, type: 3}
+  hitSound: {fileID: 8300000, guid: edb47becdd4e6444ab8587c926360928, type: 3}
+  shootSound: {fileID: 8300000, guid: c823329df8b288041a6196f9e981e369, type: 3}
+  pickUp: {fileID: 8300000, guid: af4f056fddd9d2b49a18443535610cd2, type: 3}
   musicSource: {fileID: 5946678004500259808}
   flipX: 0
   rayDistance: 3
+  bulletPrefab: {fileID: 42462302137213581, guid: 809dde445c604464cbf59b241d96daed,
+    type: 3}
+  cameraOne: {fileID: 0}
+  cameraTwo: {fileID: 0}
+  winGame: {fileID: 0}
+  loseGame: {fileID: 0}
